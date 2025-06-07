@@ -48,4 +48,12 @@ async def home():
     return {
         "answer": "I couldn’t identify the question clearly. Please rephrase or refer to the TDS discourse.",
         "links": []
+
     }
+
+    
+@app.post("/api")
+async def virtual_ta(input: QuestionInput):
+    # Combined both versions
+    print("Local version here")
+    print("GitHub version here")
