@@ -1,29 +1,25 @@
 providers:
   - id: my-ta-api
-    label: "Virtual TA API"
-    api-base-url: "https://tds-virtual-ta-zhsd.onrender.com/api/"
+    label: "Virtual TA"
+    custom:
+      url: "https://tds-virtual-ta-zhsd.onrender.com/api/"
+      method: POST
+      headers:
+        Content-Type: application/json
+      body:
+        question: "{{ prompt }}"
 
 scenarios:
-  - name: "Token cost with Japanese text"
+  - name: "Check token cost"
     provider: "my-ta-api"
-    config:
-      headers:
-        Content-Type: "application/json"
-    tests:
-      - vars:
-          question: "How much would the input token cost for gpt-3.5-turbo-0125 if I use the Japanese text?"
-        assert:
-          - type: "contains"
-            value: "cost"
+    prompts:
+      - "How much would the input token cost for gpt-3.5-turbo-0125 if I use the Japanese text?"
+        # You can add asserts like this if needed:
+        # assert:
+        #   - type: contains
+        #     value: "cost"
 
-  - name: "Fallback for unclear question"
+  - name: "Fallback test"
     provider: "my-ta-api"
-    config:
-      headers:
-        Content-Type: "application/json"
-    tests:
-      - vars:
-          question: "What's the square root of banana?"
-        assert:
-          - type: "contains"
-            value: "couldn’t identify"
+    prompts:
+      - "What's the square root of banana?"
