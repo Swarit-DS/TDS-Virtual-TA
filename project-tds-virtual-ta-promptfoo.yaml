@@ -1,8 +1,8 @@
 providers:
   - id: my-ta-api
     label: "Virtual TA API"
-    type: api
     config:
+      type: api
       url: "https://tds-virtual-ta-zhsd.onrender.com/api/"
 
 scenarios:
