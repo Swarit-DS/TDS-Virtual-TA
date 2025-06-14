@@ -1,6 +1,6 @@
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
-from pydantic import BaseModel
+from pydantic import BaseModel, root_validator
 from typing import Optional
 import tiktoken
 
@@ -15,19 +15,26 @@ app.add_middleware(
 )
 
 class QuestionInput(BaseModel):
-    prompt: str
+    prompt: Optional[str] = None
+    question: Optional[str] = None
     image: Optional[str] = None
+
+    @root_validator(pre=True)
+    def unify_input(cls, values):
+        # If "prompt" is missing but "question" is provided, copy it
+        if not values.get("prompt") and values.get("question"):
+            values["prompt"] = values["question"]
+        return values
 
 def calculate_token_cost(text: str, model: str = "gpt-3.5-turbo-0125", cost_per_million: float = 0.50):
     encoding = tiktoken.get_encoding("cl100k_base")
     num_tokens = len(encoding.encode(text))
-    cost_per_token = cost_per_million / 1_000_000
-    cost = num_tokens * cost_per_token
+    cost = num_tokens * (cost_per_million / 1_000_000)
     return round(cost, 7), num_tokens
 
 @app.post("/api/")
 async def virtual_ta(input: QuestionInput):
-    if "cost" in input.prompt.lower() and "token" in input.prompt.lower():
+    if input.prompt and "cost" in input.prompt.lower() and "token" in input.prompt.lower():
         sample_japanese_text = "私は静かな図書館で本を読みながら、時間の流れを忘れてしまいました。"
         cost, tokens = calculate_token_cost(sample_japanese_text)
         return {
@@ -43,6 +50,7 @@ async def virtual_ta(input: QuestionInput):
                 }
             ]
         }
+
     return {
         "answer": "I couldn’t identify the question clearly. Please rephrase or refer to the TDS discourse.",
         "links": []
