@@ -1,0 +1,21 @@
+providers:
+  - id: my-ta-api
+    label: "Virtual TA API"
+    config:
+      type: custom
+      url: "https://tds-virtual-ta-zhsd.onrender.com/api/"
+
+scenarios:
+  - name: "Token cost with Japanese text"
+    provider: my-ta-api
+    prompt: "How much would the input token cost for gpt-3.5-turbo-0125 if I use the Japanese text?"
+    assert:
+      - type: contains
+        value: "cost"
+
+  - name: "Fallback for unclear question"
+    provider: my-ta-api
+    prompt: "What's the square root of banana?"
+    assert:
+      - type: contains
+        value: "couldn’t identify"

@@ -1,0 +1,119 @@
+2025-06-07T11:08:16.245Z [ERROR]: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-07T11:08:16.247Z [ERROR]: Failed to validate configuration: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-07T11:09:36.859Z [ERROR]: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-07T11:09:36.862Z [ERROR]: Failed to validate configuration: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-07T11:10:58.700Z [ERROR]: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-07T11:10:58.703Z [ERROR]: Failed to validate configuration: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-07T11:16:44.900Z [ERROR]: Failed to validate configuration: bad indentation of a mapping entry (15:7)
+
+ 12 |       
+ 13 |     tests:
+ 14 |       - name: "Token cost with Japane ...
+ 15 |       prompt: "How much would the inp ...
+------------^
+ 16 |         assert:
+ 17 |           contains:
+2025-06-07T11:19:37.373Z [ERROR]: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-07T11:19:37.378Z [ERROR]: Failed to validate configuration: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-14T05:02:56.496Z [ERROR]: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-14T05:02:56.498Z [ERROR]: Failed to validate configuration: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-14T05:04:31.244Z [ERROR]: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-14T05:04:31.245Z [ERROR]: Failed to validate configuration: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-14T05:06:41.619Z [ERROR]: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-14T05:06:41.621Z [ERROR]: Failed to validate configuration: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-14T05:10:27.808Z [ERROR]: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-14T05:10:27.810Z [ERROR]: Failed to validate configuration: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-14T05:11:49.118Z [ERROR]: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-14T05:11:49.120Z [ERROR]: Failed to validate configuration: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-14T05:13:04.266Z [ERROR]: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-14T05:13:04.267Z [ERROR]: Failed to validate configuration: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-14T05:15:38.941Z [ERROR]: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
+2025-06-14T05:15:38.943Z [ERROR]: Failed to validate configuration: Could not identify provider: [1mmy-ta-api[22m.
+
+[37mPlease check your configuration and ensure the provider is correctly specified.[39m
+[37m[39m
+[37mFor more information on supported providers, visit:[39m [36mhttps://promptfoo.dev/docs/providers/[39m
