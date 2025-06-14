@@ -2,7 +2,7 @@ providers:
   - id: my-ta-api
     label: "Virtual TA API"
     config:
-      type: custom
+      type: api
       url: "https://tds-virtual-ta-zhsd.onrender.com/api/"
 
 scenarios:
@@ -19,3 +19,4 @@ scenarios:
     assert:
       - type: contains
         value: "couldn’t identify"
+
