@@ -8,7 +8,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Or restrict to your domain
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -25,7 +25,7 @@ def calculate_token_cost(text: str, model: str = "gpt-3.5-turbo-0125", cost_per_
     cost = num_tokens * cost_per_token
     return round(cost, 7), num_tokens
 
-@app.post("/api/")
+@app.post("/api")
 async def virtual_ta(input: QuestionInput):
     if "cost" in input.question.lower() and "token" in input.question.lower():
         sample_japanese_text = "私は静かな図書館で本を読みながら、時間の流れを忘れてしまいました。"
@@ -51,4 +51,4 @@ async def virtual_ta(input: QuestionInput):
 
 @app.get("/")
 async def home():
-    return {"message": "TDS Virtual TA API is running! Use POST /api/ to submit a question."}
+    return {"message": "TDS Virtual TA API is running! Use POST /api to submit a question."}
