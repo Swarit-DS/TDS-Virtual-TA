@@ -13,13 +13,15 @@ scenarios:
   - name: "Check token cost"
     provider: "my-ta-api"
     prompts:
-      - "How much would the input token cost for gpt-3.5-turbo-0125 if I use the Japanese text?"
-        # You can add asserts like this if needed:
-        # assert:
-        #   - type: contains
-        #     value: "cost"
+      - prompt: "How much would the input token cost for gpt-3.5-turbo-0125 if I use the Japanese text?"
+        assert:
+          - type: contains
+            value: "cost"
 
   - name: "Fallback test"
     provider: "my-ta-api"
     prompts:
-      - "What's the square root of banana?"
+      - prompt: "What's the square root of banana?"
+        assert:
+          - type: contains
+            value: "couldn’t identify"
